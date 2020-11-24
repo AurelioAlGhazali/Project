@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: Tahoma;
+}
+
+.container {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.animation {
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  position: relative;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  margin-bottom: 80px;
+}
+
+@keyframes move {
+  0%   {background-color:white; left:2.5%; width:10px;}
+  50%  {background-color:orange; left:40%; width:20%;}
+  100% {background-color:white; left:97.5%; width:10px;}
+}
+
+
+.top-wrapper {
+  background-image: url(https://cdn.wallpapersafari.com/62/48/QPMa5Z.jpg);
+  padding: 200px 0 200px 0;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.top-wrapper h1{
+  font-size: 50px;
+  opacity: 0.8;
+  letter-spacing: 5px;
+  margin-bottom: 10px
+  padding: 0 5px;
+}
+
+.top-wrapper p {
+  opacity: 0.9;
+  margin-bottom: 10px
+}
+
+.image img{
+  width: 95%;
+  height: auto;
+  position: none;
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  background-color: orange;
+}
+
+.container-2 {
+  margin-right: 100px;
+}
+
+.logo {
+  float: left;
+  width: 110px;
+  margin: 5px 50px;
+}
+
+.header-left,{
+  float: left;
+  font-size: 30px;
+  margin: 5px 50px;
+  padding: 10px;
+}
+
+.header-right {
+  float: right;
+  transition: all 0.5s; /*untuk animasi yang berubah setiap saat fungsi hover*/
+  background-color: darkorange;
+  margin: 0 0.5px;
+}
+
+.header-right:hover {
+  background-color: white;
+  color: black;
+}
+
+.header-right a {
+  line-height: 90px;
+  padding: 5px 40px;
+  color: white;
+  display: block;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0 70px 0;
+  background-color: #2d3436;
+  color: white;
+}
+
+
+
+h2, footer p {
+  margin-bottom: 10px;
+  padding: 0 5px;
+}
+
+h2 {
+  letter-spacing: 3px;
+}
+
+footer p {
+  opacity: 0.7;
+}
+
+.btn-contact {
+  margin-top: 20px;
+  background-color: #f1c40f;
+  box-shadow: 0 7px 0 #f39c12;
+  padding: 12px 60px;
+  color: black;
+  display: inline-block;
+  border-radius: 4px;
+  transition: all .2s;
+}
+
+.btn-contact:hover {
+  transform: translateY(7px);
+  box-shadow: 0 0 0 white;
+}
+
+.contact-us a {
+  color: black;
+}
